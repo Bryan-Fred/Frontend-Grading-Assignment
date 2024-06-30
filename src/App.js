@@ -13,7 +13,7 @@ import ContactPage from "./pages/ContactPage";
 function App() {
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Navigate to="/Login" />} />
           <Route path="login" element={< Login />}/>;
